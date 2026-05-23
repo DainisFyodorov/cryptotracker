@@ -1,0 +1,178 @@
+﻿/* Custom styles above bootstrap */
+
+:root {
+    --bs-body-bg: #0f1117;
+    --bs-dark-rgb: 15, 17, 23;
+}
+
+body {
+    background-color: #0f1117;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* Tables */
+.table-dark {
+    --bs-table-bg: #161b27;
+    --bs-table-hover-bg: #1e2435;
+    border-color: #2d3748;
+}
+
+thead th {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #6b7280 !important;
+    background-color: #0f1117 !important;
+    border-bottom: 1px solid #2d3748 !important;
+    padding: 12px 16px;
+}
+
+tbody td {
+    padding: 12px 16px;
+    border-color: #1e2435;
+    vertical-align: middle;
+}
+
+/* Cards */
+.card {
+    border-radius: 12px;
+}
+
+/* Buttons */
+.btn-warning {
+    background-color: #f59e0b;
+    border-color: #f59e0b;
+    color: #000;
+    font-weight: 600;
+}
+
+.btn-warning:hover {
+    background-color: #d97706;
+    border-color: #d97706;
+}
+
+/* Forms */
+
+/* Fix: Bootstrap doesn't automatically inherit text-light inside .card */
+.card.bg-black,
+.card.bg-black .card-body,
+.card.bg-black .card-title,
+.card.bg-black .form-label,
+.card.bg-black p,
+.card.bg-black h4,
+.card.bg-black h5 {
+    color: #f1f5f9 !important;
+}
+
+.form-control.bg-secondary {
+    background-color: #1e2435 !important;
+    border-color: #2d3748 !important;
+    color: #f1f5f9 !important;
+}
+
+.form-control.bg-secondary::placeholder {
+    color: #6b7280;
+}
+
+.form-control.bg-secondary:focus {
+    background-color: #253048 !important;
+    border-color: #f59e0b !important;
+    box-shadow: 0 0 0 0.25rem rgba(245, 158, 11, 0.2) !important;
+    color: #f1f5f9 !important;
+}
+
+/* Chrome autofill fix: Chrome changes background to white */
+.form-control.bg-secondary:-webkit-autofill,
+.form-control.bg-secondary:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 1000px #1e2435 inset !important;
+    -webkit-text-fill-color: #f1f5f9 !important;
+    caret-color: #f1f5f9 !important;
+}
+
+/* Show password button */
+.input-group .btn-secondary {
+    background-color: #1e2435 !important;
+    border-color: #2d3748 !important;
+    color: #9ca3af !important;
+}
+
+.input-group .btn-secondary:hover {
+    background-color: #253048 !important;
+    color: #f1f5f9 !important;
+}
+
+/* hr inside of the card */
+.card.bg-black hr {
+    border-color: #2d3748 !important;
+    opacity: 1;
+}
+
+/* Result list of search */
+.list-group-item.bg-secondary {
+    background-color: #1e2435 !important;
+    color: #f1f5f9 !important;
+    border: 1px solid #2d3748 !important;
+}
+
+.list-group-item.bg-secondary:hover {
+    background-color: #253048 !important;
+}
+
+/* Spinner */
+.spinner-border.text-warning {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+/* Status badge */
+#updateBadge {
+    font-size: 0.75rem;
+    padding: 6px 10px;
+}
+
+/* Coins' icons */
+tbody img {
+    border: 1px solid #2d3748;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0f1117;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2d3748;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #4b5563;
+}
+
+/* Adaptive */
+@media (max-width: 576px) {
+    .container {
+        padding: 0 12px;
+    }
+
+    .card-body {
+        padding: 16px !important;
+    }
+
+    h1.h3 {
+        font-size: 1.3rem;
+    }
+}

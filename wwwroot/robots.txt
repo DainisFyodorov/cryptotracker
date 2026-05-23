@@ -1,0 +1,11 @@
+﻿User-agent: *
+Allow: /
+Allow: /index.html
+
+# Closing personal pages from indexing
+Disallow: /portfolio.html
+Disallow: /login.html
+Disallow: /register.html
+Disallow: /api/
+
+Sitemap: https://yourdomain.com/sitemap.xml
