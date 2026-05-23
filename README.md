@@ -16,7 +16,7 @@ dotnet restore
 ```bash
 dotnet run
 ```
-Open in browser: **http://localhost:5000**
+Open in browser: **https://localhost:52335** or **http://localhost:52336**
 
 Database `cryptotracker.db` (SQLite) will be created automatically on first launch.
 
